@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+--font-display: "Urbanist", sans-serif;
+--breakpoint-3xl: 1920px;
+--color-primary: #FF9324;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111827 !important;
+
+  /* keep background white */
+  -webkit-box-shadow: 0 0 0px 1000px white inset,
+                      0 0 0px 0px transparent !important;
+
+  box-shadow: 0 0 0px 1000px white inset,
+              var(--tw-ring-offset-shadow),
+              var(--tw-ring-shadow),
+              var(--tw-shadow) !important;
+
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@layer base {
+html {
+font-family: var(--font-display);
+}
+
+body {
+background-color: #fcfbfc;
+}
+}
