@@ -7,6 +7,10 @@
 --color-primary: #FF9324;
 }
 
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {

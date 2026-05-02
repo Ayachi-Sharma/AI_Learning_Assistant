@@ -115,11 +115,11 @@ function LoginPage() {
                   onClick={() => setShowPassword(!showPassword)}
                   className="absolute inset-y-0 right-0 pr-4 flex items-center cursor-pointer text-gray-400 hover:text-blue-600"
                 >
-                  {/* {showPassword ? (
+                  {showPassword ? (
                     <Eye className="h-5 w-5" />
                   ) : (
                     <EyeClosed className="h-5 w-5" />
-                  )} */}
+                  )}
                 </div>
               </div>
             </div>
