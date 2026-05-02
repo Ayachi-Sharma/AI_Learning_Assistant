@@ -1,6 +1,8 @@
 // use env variable instead of localhost
 export const BASE_URL = import.meta.env.VITE_API_URL;
 
+console.log("ENV:", import.meta.env.VITE_API_URL);
+
 export const API_PATHS = {
     AUTH : {
         REGISTER: `${BASE_URL}/api/auth/register`,
