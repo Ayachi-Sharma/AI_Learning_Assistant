@@ -139,7 +139,7 @@ function DashboardPage() {
               key={index}
               variants={statCardVariants}
               whileHover={{ y: -5 }}
-              className={`${stat.bg} rounded-[2rem] p-6 relative overflow-hidden group cursor-pointer shadow-lg transition-all duration-300`}
+              className={`${stat.bg} rounded-[2rem] p-6 relative overflow-hidden group shadow-lg transition-all duration-300`}
             >
               {/* Centered Icon Box (Matches the Image Style) */}
               <div className='flex justify-center mb-2'>
@@ -223,7 +223,7 @@ function DashboardPage() {
                     key={activity.id || index}
                     variants={itemVariants}
                     whileHover={{ x: 8 }}
-                    className='flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-transparent hover:border-blue-200 hover:bg-white hover:shadow-md transition-all duration-200 cursor-pointer group'
+                    className='flex items-center justify-between p-4 rounded-xl bg-slate-50 border border-transparent hover:border-blue-200 hover:bg-white hover:shadow-md transition-all duration-200 group'
                   >
                     <div className='flex-1 min-w-0'>
                       <div className='flex items-center gap-3 mb-1'>
@@ -245,7 +245,7 @@ function DashboardPage() {
                     {activity.link && (
                       <motion.a
                         href={activity.link}
-                        className='ml-4 px-5 py-2 text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-blue-100 shadow-md transition-all'
+                        className='ml-4 px-5 py-2 text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-blue-100 shadow-md transition-all cursor-pointer'
                         whileTap={{ scale: 0.95 }}
                       >
                         Open

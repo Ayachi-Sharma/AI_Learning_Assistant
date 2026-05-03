@@ -148,7 +148,7 @@ const AIActions = () => {
                     type='submit'
                     onClick={handleExplainConcept}
                     disabled={loadingAction === "explain" || !concept.trim()}
-                    className='shrink-0 h-11 px-5 bg-linear-to-r from-indigo-400 to-violet-500 hover:from-indigo-500 hover:to-violet-600 text-white text-sm font-semibold rounded-xl transition-all duration-200 disabled:opacity-90 disabled:cursor-not-allowed active:scale-95'>
+                    className='shrink-0 cursor-pointer h-11 px-5 bg-linear-to-r from-indigo-400 to-violet-500 hover:from-indigo-500 hover:to-violet-600 text-white text-sm font-semibold rounded-xl transition-all duration-200 disabled:opacity-90 disabled:cursor-not-allowed active:scale-95'>
                         {loadingAction === "explain" ? (
                             <span className='flex items-center gap-2'>
                                 <div className='w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin'/>

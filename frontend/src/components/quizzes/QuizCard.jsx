@@ -11,7 +11,7 @@ const QuizCard = ({ quiz, onDelete }) => {
                     e.stopPropagation();
                     onDelete(quiz);
                 }}
-                className='absolute top-4 right-4 p-2 text-slate-400 hover:text-rose-500 hover-bg-rose-50 rounded-lg transition-all duration-200 opacity-0 group-hover:opacity-100'
+                className='cursor-pointer absolute top-4 right-4 p-2 text-slate-400 hover:text-rose-500 hover-bg-rose-50 rounded-lg transition-all duration-200 opacity-0 group-hover:opacity-100'
             >
                 <Trash2 className='w-4 h-4' strokeWidth={2} />
             </button>
@@ -67,7 +67,7 @@ const QuizCard = ({ quiz, onDelete }) => {
                     </Link>
                 ) : (
                     <Link to={`/quizzes/${quiz._id}`}>
-                        <button className='group/btn relative w-full h-11 bg-linear-to-r from-indigo-500 to-violet-400 hover:from-indigo-600 hover:to-violet-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-indigo-500/25 active:scale-95 overflow-hidden'>
+                        <button className='curson-pointer group/btn relative w-full h-11 bg-linear-to-r from-indigo-500 to-violet-400 hover:from-indigo-600 hover:to-violet-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-indigo-500/25 active:scale-95 overflow-hidden'>
                             <span className='relative z-10 flex items-center justify-center gap-2'>
                                 <Play className='w-4 h-4' strokeWidth={2.5} />
                                 Start Quiz

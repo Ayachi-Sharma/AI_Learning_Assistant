@@ -152,7 +152,7 @@ function QuizzTakePlace() {
                 {/* Custom radio button */}
                 <div className={`shrink-0 w-5 h-5 rounded-full border-2 transition-all duration-200 ${isSelected
                     ? 'border-slate-500 bg-slate-500'
-                    : 'border-slate-300 bg-white group-hover:border-emerald-400'
+                    : 'border-slate-300 bg-white group-hover:border-slate-400'
                   }`}>
                   {isSelected && (
                     <div className='w-full h-full flex items-center justify-center'>
@@ -162,7 +162,7 @@ function QuizzTakePlace() {
                 </div>
 
                 {/* OptionText */}
-                <span className={`ml-4 text-sm font-medium transition-colors duration-200 ${isSelected ? 'text-emerald-900' : 'text-slate-700 group-hover:text-slate-900'
+                <span className={`ml-4 text-sm font-medium transition-colors duration-200 ${isSelected ? 'text-slate-900' : 'text-slate-700 group-hover:text-slate-900'
                   }`}>
                   {option}
                 </span>
@@ -179,7 +179,7 @@ function QuizzTakePlace() {
         </div>
       </div>
 
-      {/* Navigateion Routes */}
+      {/* Navigation Routes */}
       <div className='flex items-center justify-between gap-4'>
         <Button
           onClick={handlePreviousQuestion}
@@ -194,7 +194,7 @@ function QuizzTakePlace() {
           <button
             onClick={handleSubmitQuiz}
             disabled={submitting}
-            className='group relative px-8 h-12 bg-linear-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-emerald-500/25 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 overflow-hidden'
+            className='group cursor-pointer relative px-8 h-12 bg-linear-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-emerald-500/25 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 overflow-hidden'
           >
             <span className='relative z-10 flex items-center justify-center gap-2'>
               {submitting ? (
