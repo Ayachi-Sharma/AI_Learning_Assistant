@@ -151,7 +151,7 @@ function QuizzTakePlace() {
 
                 {/* Custom radio button */}
                 <div className={`shrink-0 w-5 h-5 rounded-full border-2 transition-all duration-200 ${isSelected
-                    ? 'border-emerald-500 bg-emerald-500'
+                    ? 'border-slate-500 bg-slate-500'
                     : 'border-slate-300 bg-white group-hover:border-emerald-400'
                   }`}>
                   {isSelected && (
@@ -170,7 +170,7 @@ function QuizzTakePlace() {
                 {/* Selected Checkmark */}
                 {isSelected && (
                   <CheckCircle2
-                    className='ml-auto w-5 h-5 text-emerald-500'
+                    className='ml-auto w-5 h-5 text-slate-500'
                     strokeWidth={2.5} />
                 )}
               </label>
