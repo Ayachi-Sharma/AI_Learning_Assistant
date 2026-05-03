@@ -137,7 +137,7 @@ function QuizzTakePlace() {
             return (
               <label key={index}
                 className={`group relative flex items-center p-3 border-2 rounded-xl cursor-pointer transition-all duration-200 ${isSelected
-                    ? 'border-emerald-500 bg-emerald-50 shadow-lg shadow-emerald-500/10'
+                    ? 'border-slate-500 bg-slate-50 shadow-lg shadow-slate-500/10'
                     : 'border-slate-200 bg-slate-50/50 hover:border-slate-300 hover:bg-white hover:shadow-md'
                   }`}>
                 <input
