@@ -67,7 +67,7 @@ const QuizCard = ({ quiz, onDelete }) => {
                     </Link>
                 ) : (
                     <Link to={`/quizzes/${quiz._id}`}>
-                        <button className='curson-pointer group/btn relative w-full h-11 bg-linear-to-r from-indigo-500 to-violet-400 hover:from-indigo-600 hover:to-violet-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-indigo-500/25 active:scale-95 overflow-hidden'>
+                        <button className='curson-pointer group/btn relative w-full h-11 bg-linear-to-r from-indigo-500 to-violet-400 hover:from-indigo-600 hover:to-violet-600 text-white font-semibold text-sm rounded-xl transition-all duration-200 shadow-lg shadow-indigo-500/25 active:scale-95 overflow-hidden cursor-pointer'>
                             <span className='relative z-10 flex items-center justify-center gap-2'>
                                 <Play className='w-4 h-4' strokeWidth={2.5} />
                                 Start Quiz

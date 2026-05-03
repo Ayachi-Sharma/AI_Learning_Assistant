@@ -158,7 +158,7 @@ setResults(data);
         </div>
         {detailedResults.map((result, index) => {
 
-console.log("----- QUESTION DEBUG -----");
+// console.log("----- QUESTION DEBUG -----");
 // console.log("Question:", result.question);
 // console.log("Options:", result.options);
 // console.log("Correct Answer:", result.correctAnswer);

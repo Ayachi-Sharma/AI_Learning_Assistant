@@ -184,8 +184,7 @@ const FlashcardSetCard = ({ flashcardSet, onDelete }) => {
 
                                 <button
                                     onClick={handleConfirmDelete}
-                                    className="px-4 h-10 bg-red-600 text-white rounded-lg 
-  flex items-center justify-center gap-2 min-w-[120px]"
+                                    className="px-4 h-10 bg-red-600 text-white rounded-lg flex items-center justify-center gap-2 min-w-[120px]"
                                 >
                                     {deleting ? (
                                         <>

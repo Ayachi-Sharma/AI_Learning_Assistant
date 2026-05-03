@@ -10,7 +10,7 @@ const SaveButton = ({ onClick }) => {
     void btn.offsetWidth;
     btn.classList.add("clicked");
 
-    console.log("Save button clicked");
+    // console.log("Save button clicked");
     onClick?.(e);
   };
 

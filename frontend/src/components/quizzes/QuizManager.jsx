@@ -53,7 +53,7 @@ const QuizManager = ({ documentId }) => {
 
         try {
             const result = await aiService.generateQuiz(documentId, { numQuestions });
-            console.log('Quiz generated:', result);
+            // console.log('Quiz generated:', result);
             toast.success('Quiz generated successfully!');
             setIsGenerateModalOpen(false);
 
