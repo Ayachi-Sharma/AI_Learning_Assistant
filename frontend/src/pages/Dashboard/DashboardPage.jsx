@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Spinner from '../../components/common/spinner';
 import progressService from '../../Services/progressService';
 import toast from 'react-hot-toast';
+import { Link } from "react-router-dom";
 import { FileText, BookOpen, TrendingUp, Clock, Award, ArrowUpRight } from 'lucide-react';
 
 function DashboardPage() {
@@ -243,14 +244,15 @@ function DashboardPage() {
                       </p>
                     </div>
                     {activity.link && (
-                      <motion.a
-                        href={activity.link}
-                        className='ml-4 px-5 py-2 text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-blue-100 shadow-md transition-all cursor-pointer'
-                        whileTap={{ scale: 0.95 }}
-                      >
-                        Open
-                      </motion.a>
-                    )}
+  <Link to={activity.link}>
+    <motion.div
+      className='ml-4 px-5 py-2 text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 rounded-lg shadow-blue-100 shadow-md transition-all cursor-pointer inline-block'
+      whileTap={{ scale: 0.95 }}
+    >
+      Open
+    </motion.div>
+  </Link>
+)}
                   </motion.div>
                 ))}
             </motion.div>
