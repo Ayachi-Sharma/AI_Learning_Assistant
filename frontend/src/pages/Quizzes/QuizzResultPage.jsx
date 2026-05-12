@@ -181,7 +181,8 @@ const correctAnswerIndex =
           // const correctAnswerIndex = result.correctAnswer.startsWith('O')
           //   ? parseInt(result.correctAnswer.substring(1)) - 1
           //   : result.options.findIndex(opt => opt === result.correctAnswer);
-          const isCorrect = result.isCorrect;
+          // const isCorrect = result.isCorrect;
+          const isCorrect = userAnswerIndex === correctAnswerIndex;
 
           // console.log("User Answer Index:", userAnswerIndex);
 // console.log("Correct Answer Index:", correctAnswerIndex);
